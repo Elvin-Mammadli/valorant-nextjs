@@ -15,9 +15,7 @@
   transition: all 0.3s;
   border-radius: 10px;
 }
-.single img {
-  width: 128px;
-  height: 128px;
+.iconImg {
   border-radius: 10px;
 }
 .single:hover {
@@ -27,4 +25,8 @@
 
 .imageContainer {
   display: flex;
+}
+
+.single h3 {
+  color: var(--red);
 }

@@ -6,6 +6,7 @@ export const getStaticProps = async () => {
 
   const res = await fetch('https://valorant-api.com/v1/agents');
   const { data } = await res.json();
+  data.splice(7, 1)
 
   return {
     props: { agents: data }
@@ -24,8 +25,8 @@ const Agents = ({ agents }) => {
             <a className={styles.single}>
               <h3>{agent.displayName}</h3>
               <div className={styles.imageContainer}>
-                <Image src={agent.displayIcon} alt={agent.displayName} />
-                <Image src={agent.background} alt="background image" />
+                <Image width={128} height={128} src={agent.displayIcon} alt={agent.displayName} />
+                {agent.background && <Image width={128} height={128} src={agent.background} alt="background image" />}
               </div>
             </a>
           </Link>

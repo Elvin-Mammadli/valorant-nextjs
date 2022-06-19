@@ -5,7 +5,7 @@ export const getStaticPaths = async () => {
 
   const res = await fetch('https://valorant-api.com/v1/agents');
   const { data } = await res.json();
-
+  data.splice(7,1);
   const paths = data.map(agent => {
     return {
       params: { id: agent.uuid.toString() }
