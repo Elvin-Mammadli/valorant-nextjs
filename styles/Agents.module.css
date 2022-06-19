@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.single {
+  width: 250px;
+  padding: 8px;
+  background: #fff;
+  display: block;
+  border-left: 8px solid #fff;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+.single img {
+  width: 128px;
+  height: 128px;
+  border-radius: 10px;
+}
+.single:hover {
+  box-shadow: 0 0 25px rgb(255, 0, 0);
+  transform: scale(1.03);
+}
+
+.imageContainer {
+  display: flex;
+}

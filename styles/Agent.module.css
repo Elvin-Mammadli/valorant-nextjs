@@ -1,0 +1,6 @@
+.agentDetails {
+  padding: 20px;
+  display: inline-block;
+  background-color: var(--white);
+  border-radius: 10px;
+}
