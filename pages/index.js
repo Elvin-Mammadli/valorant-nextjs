@@ -18,7 +18,7 @@ export default function Home() {
             <h1>Valorant Soldiers</h1>
           </div>
         </div>
-        <p className={styles.text}>Greetings dear user! This is the mini project I've built while learning nextjs. You can go through various valorant agents and see details about them including their voices. I hope you will like it! :)</p>
+        <p className={styles.text}>Greetings dear user! This is the mini project I&apos;ve built while learning nextjs. You can go through various valorant agents and see details about them including their voices. I hope you will like it! :)</p>
         <Link href="/agents">
           <a className={styles.btn}>Agent listing</a>
         </Link>

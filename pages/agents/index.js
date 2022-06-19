@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from "next/dist/client/image";
 import styles from '../../styles/Agents.module.css';
 
 export const getStaticProps = async () => {
@@ -23,8 +24,8 @@ const Agents = ({ agents }) => {
             <a className={styles.single}>
               <h3>{agent.displayName}</h3>
               <div className={styles.imageContainer}>
-                <img src={agent.displayIcon} alt="test" />
-                <img src={agent.background} alt="" />
+                <Image src={agent.displayIcon} alt={agent.displayName} />
+                <Image src={agent.background} alt="background image" />
               </div>
             </a>
           </Link>
